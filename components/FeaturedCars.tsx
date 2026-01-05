@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Car } from '../types';
 import { Page, NavigateToOptions } from '../App';
@@ -32,7 +31,7 @@ const FeaturedCars: React.FC<FeaturedCarsProps> = ({ navigateTo }) => {
     <section className="py-12 md:py-20 bg-brand-dark">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-white">Aktuálna ponuka vozidiel</h2>
+          <h2 className="text-3xl md:text-4xl font-bold scroll-gradient-text pb-1">Aktuálna ponuka vozidiel</h2>
           <p className="mt-4 text-lg text-gray-400 max-w-2xl mx-auto">Vybrané vozidlá, ktoré sme nedávno doviezli pre našich klientov.</p>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">

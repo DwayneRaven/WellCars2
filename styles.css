@@ -33,6 +33,8 @@
     .service-card {
         padding: 2rem;
         border-radius: 1.5rem;
+        cursor: default; /* Reset cursor on desktop */
+        height: 100%; /* Force full height for alignment */
     }
     .service-card:hover {
         transform: translateY(-4px);
@@ -87,4 +89,35 @@
     .icon-container::after {
         height: 1.5rem;
     }
+}
+
+/* --- Scroll Gradient Text Effect --- */
+.scroll-gradient-text {
+    /* Gradient from Light Blue -> Purple -> Cyan/Teal to pop against dark bg */
+    background: linear-gradient(135deg, #60A5FA 10%, #A78BFA 50%, #2DD4BF 90%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    
+    /* This creates the scroll effect: the background stays fixed relative to viewport */
+    background-attachment: fixed;
+    background-size: 100% 100vh;
+    
+    /* Ensure it behaves like text */
+    display: inline-block; 
+}
+
+/* Mobile Fallback: Fixed attachment can be buggy on iOS, so we use standard gradient */
+@media (max-width: 768px) {
+    .scroll-gradient-text {
+        background-attachment: scroll;
+        background-size: 200% auto;
+        animation: gradient-shift 5s ease infinite;
+    }
+}
+
+@keyframes gradient-shift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
 }

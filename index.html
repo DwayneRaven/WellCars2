@@ -8,13 +8,18 @@
     <title>WellCars - Váš partner pre dovoz áut</title>
     <!-- Tailwind via CDN is kept for simplicity. In a full production app, we would install it via npm, but this works fine for now. -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    
+    <!-- Google Fonts: Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+
     <script>
       tailwind.config = {
         theme: {
           extend: {
             fontFamily: {
-              sans: ['Inter', 'sans-serif'],
+              sans: ['"Plus Jakarta Sans"', 'sans-serif'],
             },
             colors: {
               'brand-blue': '#007AFF',

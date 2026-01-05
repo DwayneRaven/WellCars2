@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { Car } from '../types';
 
@@ -59,7 +58,7 @@ ${message}
     <div className="bg-brand-dark py-20">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <h1 className="text-4xl md:text-5xl font-extrabold text-white">Kontaktujte nás</h1>
+          <h1 className="text-4xl md:text-5xl font-extrabold scroll-gradient-text pb-1">Kontaktujte nás</h1>
           <p className="mt-4 text-lg text-gray-400 max-w-2xl mx-auto">
             Máte otázky alebo záujem o naše služby? Neváhajte nám napísať.
           </p>
@@ -85,7 +84,6 @@ ${message}
                         </div>
                     </div>
                     <div>
-{/* FIX: Corrected closing tag for label from </for-email> to </label>. */}
                         <label htmlFor="email" className="block text-sm font-medium text-gray-300 mb-2">Email*</label>
                         <input type="email" id="email" value={email} onChange={e => setEmail(e.target.value)} required placeholder="napr. priklad@vasadomena.com" className="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-brand-blue" />
                     </div>

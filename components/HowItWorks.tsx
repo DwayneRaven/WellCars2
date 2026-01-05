@@ -46,7 +46,7 @@ const HowItWorks: React.FC = () => {
     <section className="py-20 bg-gray-900 overflow-hidden">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-20">
-          <h2 className="text-3xl md:text-5xl font-bold text-white mb-4">Ako to funguje?</h2>
+          <h2 className="text-3xl md:text-5xl font-bold scroll-gradient-text mb-4 pb-1">Ako to funguje?</h2>
           <p className="text-lg text-gray-400 max-w-2xl mx-auto">
             Náš proces dovozu je transparentný a jednoduchý.
           </p>

@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Page, NavigateToOptions } from '../App';
 
@@ -212,7 +211,7 @@ const Hero: React.FC<HeroProps> = ({ navigateTo }) => {
       
       {/* Content Layer */}
       <div className="relative z-20 container mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center">
-        <h1 className="text-4xl md:text-6xl font-extrabold leading-tight mb-4 animate-fade-in-down drop-shadow-lg">
+        <h1 className="text-4xl md:text-6xl font-extrabold leading-tight mb-4 animate-fade-in-down drop-shadow-lg scroll-gradient-text pb-1">
           Dovoz vozidiel na mieru
         </h1>
         <p className="text-lg md:text-2xl text-gray-200 mb-8 max-w-3xl animate-fade-in-up drop-shadow-md">

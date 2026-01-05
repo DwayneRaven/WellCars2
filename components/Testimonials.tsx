@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 
 // Tiny Car Icon Component for the animation
@@ -68,7 +67,7 @@ const AboutUs: React.FC = () => {
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-white">O nás</h2>
+          <h2 className="text-3xl md:text-4xl font-bold scroll-gradient-text pb-1">O nás</h2>
           <p className="mt-4 text-lg text-gray-400 max-w-3xl mx-auto">
             Sme vaším spoľahlivým partnerom pre dovoz vozidiel od roku 2020. Naša vášeň pre autá a odhodlanie poskytovať prvotriedne služby nám pomohli splniť sen o novom aute už tisíckam spokojných klientov.
           </p>
