@@ -11,13 +11,21 @@
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
     /* Add border back for mobile as well for consistent look */
     border: 1px solid rgba(128, 128, 128, 0.15);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: all 0.3s ease;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    height: 100%;
+    /* Height is now auto to accommodate expansion */
+    height: auto; 
     color: white;
+    cursor: pointer;
+    user-select: none; /* Prevent text selection while clicking quickly */
+}
+
+/* Background darken on active/hover */
+.service-card:hover {
+    background-color: #232b3a; 
 }
 
 /* Desktop Styles */
@@ -27,8 +35,9 @@
         border-radius: 1.5rem;
     }
     .service-card:hover {
-        transform: translateY(-8px);
-        box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2), 0 0 30px var(--glow-color);
+        transform: translateY(-4px);
+        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.2), 0 0 20px var(--glow-color);
+        border-color: rgba(0, 122, 255, 0.3);
     }
 }
 
