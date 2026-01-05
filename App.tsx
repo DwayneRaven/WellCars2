@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Header from './components/Header';
 import Hero from './components/Hero';
 import HowItWorks from './components/HowItWorks';
+import BrandCarousel from './components/BrandCarousel';
 import FeaturedCars from './components/FeaturedCars';
 import Services from './components/Services';
 import AboutUs from './components/Testimonials';
@@ -65,6 +66,7 @@ const App: React.FC = () => {
             <FeaturedCars navigateTo={navigateTo} />
             <Services />
             <AboutUs />
+            <BrandCarousel />
           </>
         );
       case 'offer':
