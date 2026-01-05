@@ -44,8 +44,10 @@ const App: React.FC = () => {
       // If changing pages
       setCurrentPage(page);
       if (page === 'home' && options?.section) {
+        // Capture section ID to ensure proper type narrowing inside the closure
+        const sectionId = options.section;
         // Wait for the home page to render, then scroll
-        setTimeout(() => doScroll(options.section), 100);
+        setTimeout(() => doScroll(sectionId), 100);
       } else {
         // For other pages or no section, just go to the top
         window.scrollTo(0, 0);
