@@ -72,7 +72,7 @@ const Services: React.FC = () => {
                      {service.icon}
                   </div>
                   
-                  <h3 className="text-base md:text-xl font-semibold text-white mb-2 text-center leading-tight">
+                  <h3 className="text-base md:text-xl font-semibold text-white mb-2 text-center leading-tight min-h-[2.5rem] md:min-h-[3.5rem] flex items-center justify-center">
                     {service.title}
                   </h3>
 
